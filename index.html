@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phonemenal</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="container">
+        <input type="text" id="word" placeholder="word" onkeyup="updateButton()" onkeypress="return oneWord(event)" autocomplete="off">
+        <!--<input type="text" id="pronounceButton" class="noselect" ReadOnly="true" value="click to get pronunciation" onclick="getPhonemes()" disabled>-->
+        <div class="fakeInput noselect disabled" id="pronounceButton" onclick="getPhonemes()" disabled>click to get pronunciation</div>
+        <div class="fakeInput disabled" id="pronunciation">pronunciation</div>
+        <div class="fakeInput noselect disabled" id="readButton" onclick="readPhonemes()" disabled>click to read pronunciation</div>
+        <!--<input type="text" id="readButton" class="noselect" ReadOnly="true" value="click to read pronunciation" disabled onclick="readPhonemes()">-->
+    </div>
+    <div id="github"><a href="https://github.com/Fantop/phonemenal">github</a></div>
+    <div id="what"><a href="https://github.com/Fantop/phonemenal#phonemenal">what?</a></div>
+    <script type="text/javascript" src="converter.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
