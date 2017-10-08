@@ -118,6 +118,12 @@ function getPhonemes() {
 
 function readPhonemes() {
     i = 0;
+    for (var ii = 0; ii < phonemeList.length; ii++) {
+        phonemeSamples[phonemeList[i]].play();
+    }
+    for (var ii = 0; ii < phonemeList.length; ii++) {
+        phonemeSamples[phonemeList[i]].pause();
+    }
     playNextPhoneme();
 }
 
